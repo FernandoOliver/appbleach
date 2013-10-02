@@ -1,16 +1,10 @@
 <!DOCTYPE HTML>
 <html> 
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
- <script type="text/javascript" charset="utf-8">
-<body>
 
-function validar(){ a função validar é uma função para quando o usuário escolher uma resposta ele receberá uma mansagem sobre a questão
+ <script language="javascript">
 
- if(value== "correto"){
-
-
-
-alert("  Parabens! Ta sabendo legal sobre Bleach! ;)  ");
+function validar(resposta){ 
+if (resposta.sel_banco[1].checked) { alert("  Parabens! Ta sabendo legal sobre Bleach! ;)  ");
 
  }
 
@@ -21,35 +15,36 @@ alert("  Parabens! Ta sabendo legal sobre Bleach! ;)  ");
  }
 
  </script>
-1)  Qual o nome da Zanpakutou do Byakuya??
+ <body>
+1)  Qual o nome da Zanpakutou do Byakuya?? <form name="resposta">
  <p>
 
 A) Zangetsu <BR>
 
- <input type="radio" name="sel_banco" value="errada" onclick="b='c';"><BR>
+ <input type="radio" name="sel_banco" value="0" ><BR>
 
 B) Hyourinmaru<BR>
 
-<input type="radio" name="sel_banco"  value="errada" onclick="b='c';"> <BR>
+<input type="radio" name="sel_banco"  value="0" > <BR>
 
 C)Zabimaru<BR>
 
-<input type="radio" name="sel_banco"  value="errada" onclick="b='c';"> <BR>
+<input type="radio" name="sel_banco"  value="0" > <BR>
 
 D)Ryuijin Jakka<BR>
 
-<input type="radio" name="sel_banco" value="errada" onclick="b='c';"> <BR>
+<input type="radio" name="sel_banco" value="0" > <BR>
 
 E)N.D.A<br>
 
-<input type="radio" name="sel_banco" value="correto" onclick="E='E';"> <BR>
+<input type="radio" name="sel_banco" value="1" > <BR>
 
  <p> 
 
-<input type="button" onclick="validar()" value="OK"> 
+<input type="button" name="but" onClick="validar(resposta)" value="OK"> 
 
   </p>
-
-</script> 
+</form>
+ 
 </body> 
 </html> 
